@@ -1,5 +1,6 @@
 import React from 'react'
 import './StudentDashboard.css'
+import StudentCard from '../StudentCard/StudentCard';
 function StudentDashboard() {
     const students = [
         {
@@ -38,9 +39,7 @@ function StudentDashboard() {
         <h1>StudentDashboard:</h1>
         <div className="card-container">
             {students.map((student, index) =>
-                <div key={index}>
-                    {student.name}
-                </div>                
+                <StudentCard key={index} name={student.name} grade={student.grade} status={student.status}/>           
             )}
         </div>
     </div>
