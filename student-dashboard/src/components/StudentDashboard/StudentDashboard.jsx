@@ -37,7 +37,9 @@ function StudentDashboard() {
     <div className='student-dashboard'>
         <h1>StudentDashboard:</h1>
         <div className="card-container">
-            
+            {students.map((student, index) =>
+                <div key={index}>student.name</div>                
+            )}
         </div>
     </div>
   )
