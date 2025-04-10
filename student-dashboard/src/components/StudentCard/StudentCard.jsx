@@ -22,9 +22,7 @@ function StudentCard({name, grade, status}) {
         <div>{name}</div>
         <div>{grade}</div>
         <div>{status}</div>
-        
-return <li className="item">{name}</li>;
-    </div>
+     </div>
   )
 }
 
