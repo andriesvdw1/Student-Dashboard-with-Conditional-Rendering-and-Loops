@@ -34,7 +34,12 @@ function StudentDashboard() {
         },
       ];
   return (
-    <div>StudentDashboard</div>
+    <div className='student-dashboard'>
+        <h1>StudentDashboard:</h1>
+        <div className="card-container">
+            
+        </div>
+    </div>
   )
 }
 
