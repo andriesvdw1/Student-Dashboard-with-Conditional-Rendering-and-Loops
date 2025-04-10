@@ -1,5 +1,10 @@
 .student-card{
     border-radius: 20px;
     background-color: gainsboro;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 2px;
     
 }
