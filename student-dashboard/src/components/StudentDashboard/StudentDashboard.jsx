@@ -34,6 +34,11 @@ function StudentDashboard() {
           status: "active",
         },
       ];
+      let activeStudents = students.filter((student) =>
+        student.status == "active" 
+    )
+      let honoursStudents = activeStudents.filter((student) =>
+        student.grade >= 85)
   return (
     <div className='student-dashboard'>
         <h1>StudentDashboard:</h1>
@@ -41,6 +46,13 @@ function StudentDashboard() {
             {students.map((student, index) =>
                 <StudentCard key={index} name={student.name} grade={student.grade} status={student.status}/>           
             )}
+            <br />
+            <h2>Honours List:</h2>
+            <p>
+            {honoursStudents.map((student, index) =>
+                <StudentCard key={index} name={student.name} grade={student.grade} status={student.status}/>           
+            )}
+            </p>
         </div>
     </div>
   )
