@@ -49,7 +49,7 @@ function StudentDashboard() {
             <br />
             <h2>Honours List:</h2>
             <p>
-            {honoursStudents.length === 0 && <p>No honours students this year</p>}
+            {honoursStudents.length === 0 && <p>No honors students this term</p>}
             {
             
             honoursStudents.map((student, index) =>
