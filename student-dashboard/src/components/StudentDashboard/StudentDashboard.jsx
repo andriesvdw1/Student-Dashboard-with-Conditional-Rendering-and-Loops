@@ -49,7 +49,10 @@ function StudentDashboard() {
             <br />
             <h2>Honours List:</h2>
             <p>
-            {honoursStudents.map((student, index) =>
+            {honoursStudents.length === 0 && <p>No honours students this year</p>}
+            {
+            
+            honoursStudents.map((student, index) =>
                 <StudentCard key={index} name={student.name} grade={student.grade} status={student.status}/>           
             )}
             </p>
